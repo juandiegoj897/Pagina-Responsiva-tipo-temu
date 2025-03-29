@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    /* ==========================
-       🚀 SLIDER AUTOMÁTICO
-       ========================== */
     let currentSlide = 0;
     let slides = document.querySelectorAll(".carousel-item");
     let totalSlides = slides.length;
@@ -24,11 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("nextSlide").addEventListener("click", nextSlide);
     document.getElementById("prevSlide").addEventListener("click", prevSlide);
 
-    setInterval(nextSlide, 5000); // Cambia la imagen cada 5 segundos automáticamente
-
-    /* ==========================
-       🛍️ CARGAR PRODUCTOS DINÁMICOS
-       ========================== */
+    setInterval(nextSlide, 5000);
     let products = [
         { id: 1, name: "Producto 1", description: "Descripción breve del producto 1", image: "img/item1.jpg" },
         { id: 2, name: "Producto 2", description: "Descripción breve del producto 2", image: "img/item2.jpg" },
@@ -55,10 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
             productContainer.appendChild(productCard);
         });
     }
-
-    /* ==========================
-       ℹ️ BOTONES "SABER MÁS"
-       ========================== */
     document.addEventListener("click", function (event) {
         if (event.target.classList.contains("saber-mas")) {
             let productId = event.target.getAttribute("data-id");
@@ -66,15 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
             alert(`📌 ${selectedProduct.name}\n\n📖 ${selectedProduct.description}`);
         }
     });
-
-    /* ==========================
-       📩 FORMULARIO DE CONTACTO
-       ========================== */
     let contactForm = document.getElementById("contact-form");
 
     if (contactForm) {
         contactForm.addEventListener("submit", function (event) {
-            event.preventDefault(); // Evita el refresco de la página
+            event.preventDefault(); 
 
             let name = document.getElementById("name").value.trim();
             let email = document.getElementById("email").value.trim();
@@ -86,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             alert("✅ Tu mensaje ha sido enviado correctamente.");
-            contactForm.reset(); // Limpia los campos del formulario
+            contactForm.reset(); 
         });
     }
 });

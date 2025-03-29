@@ -2,48 +2,35 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
-
 .bg-orange {
     background-color: #FF5722;
 }
-
 .navbar-brand {
     font-weight: bold;
 }
-
-/* Ajuste del tamaño de las imágenes del carrusel */
 .carousel img {
-    height: 450px;  /* Tamaño uniforme */
+    height: 450px;  
     object-fit: cover;
 }
-
-/* Estilos del título */
 h2 {
     margin: 20px 0;
     color: #FF5722;
 }
-
-/* Estilos de la tarjeta de producto */
 .product-card {
     border: none;
     transition: transform 0.3s;
 }
-
-/* Ajuste del tamaño de las imágenes de los productos */
 .product-card img {
-    height: 250px;  /* Tamaño uniforme */
+    height: 250px; 
     object-fit: cover;
 }
-
 .product-card:hover {
     transform: scale(1.05);
 }
-
 .btn-warning {
     background-color: #FF5722;
     border: none;
 }
-
 .btn-warning:hover {
     background-color: #E64A19;
 }
