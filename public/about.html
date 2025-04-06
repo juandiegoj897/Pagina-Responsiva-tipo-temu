@@ -2,33 +2,73 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Mi Página</a>
+            <a class="navbar-brand" href="/">Diseño de pagina tipo - Clon de TEMU</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="container my-5">
+        <h2 class="text-center">🧡 Sobre Nosotros</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="img/idk.jpg" class="img-fluid rounded" alt="Sobre nosotros">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <p>somos una pagina apasionado por brindar productos unicos, creativos y divertidos. Nuestro objetivo es ofrecer experiencias memorables y artículos que no encuentras fácilmente en tiendas tradicionales.</p>
+                    <p>Nos caracterizamos por una atención cercana, precios justos y una comunidad en crecimiento que ama lo diferente.</p>
+                    <a href="contact.html" class="btn btn-warning mt-3">Contáctanos</a>
+                </div>
+            </div>
+        </div>
 
-    <div class="container mt-4">
-        <h2>Sobre Nosotros</h2>
-        <p>Información detallada sobre la empresa.</p>
+        <div class="row mt-5">
+            <h3 class="text-center mb-4">¿Que se te ofrece?</h3>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/peak.jpg" class="card-img-top" alt="Servicio 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Productos Creativos</h5>
+                        <p class="card-text">Desde un dorito doble hasta un auto con motor de avión. Aquí todo es posible</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/nam.jpg" class="card-img-top" alt="Servicio 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Precios Inigualables</h5>
+                        <p class="card-text">Ofertas sorprendentes con precios que parecen mentira...pero no lo son.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/fly.jpg" class="card-img-top" alt="Servicio 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Atención al Cliente</h5>
+                        <p class="card-text">Te escuchamos, te apoyamos, y te ayudamos a encontrar ese artículo perfecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

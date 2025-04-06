@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Mi Página</a>
+            <a class="navbar-brand" href="index.html">Diseño de pagina tipo - Clon de TEMU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-
-    <div class="container mt-4">
-        <h2>Contacto</h2>
-        <form>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">📩 Envíanos un mensaje</h2>
+        <form action="mailto:tuemail@ejemplo.com" method="POST" enctype="text/plain">
             <div class="mb-3">
-                <label>Nombre</label>
-                <input type="text" class="form-control" required>
+                <label class="form-label">Nombre</label>
+                <input type="text" name="nombre" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label>Correo</label>
-                <input type="email" class="form-control" required>
+                <label class="form-label">Correo electrónico</label>
+                <input type="email" name="correo" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label>Mensaje</label>
-                <textarea class="form-control" rows="4" required></textarea>
+                <label class="form-label">Mensaje</label>
+                <textarea name="mensaje" class="form-control" rows="4" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-warning w-100">Enviar mensaje</button>
         </form>
     </div>
-
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

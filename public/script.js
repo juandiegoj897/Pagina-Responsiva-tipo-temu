@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(nextSlide, 5000);
     let products = [
-        { id: 1, name: "Producto 1", description: "Descripción breve del producto 1", image: "img/item1.jpg" },
-        { id: 2, name: "Producto 2", description: "Descripción breve del producto 2", image: "img/item2.jpg" },
-        { id: 3, name: "Producto 3", description: "Descripción breve del producto 3", image: "img/item3.jpg" },
-        { id: 4, name: "Producto 4", description: "Descripción breve del producto 4", image: "img/item4.jpg" },
-        { id: 5, name: "Producto 5", description: "Descripción breve del producto 5", image: "img/item5.jpg" },
-        { id: 6, name: "Producto 6", description: "Descripción breve del producto 6", image: "img/item6.jpg" }
+        { id: 1, name: "Producto 1", description: "Descripción 1", image: "img/item1.jpg" },
+        { id: 2, name: "Producto 2", description: "Descripción 2", image: "img/item2.jpg" },
+        { id: 3, name: "Producto 3", description: "Descripción 3", image: "img/item3.jpg" },
+        { id: 4, name: "Producto 4", description: "Descripción 4", image: "img/item4.jpg" },
+        { id: 5, name: "Producto 5", description: "Descripción 5", image: "img/item5.jpg" },
+        { id: 6, name: "Producto 6", description: "Descripción 6", image: "img/item6.jpg" }
     ];
 
     let productContainer = document.getElementById("product-grid");
